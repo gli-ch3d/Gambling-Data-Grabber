@@ -1,7 +1,7 @@
 Data Explanation
 
 >> Goal
-> How does AI Gamble if given the opportunity?
+> How does AI Gamble if given the opportunity? Data Collection Phase
 
 >> Dataset
 > Data is gathered from 'skin.club' a gambling site that gives out skins for the game 'Counter-Strike'
@@ -9,7 +9,7 @@ Data Explanation
 
 >>> Code-Blocks
 
->> link_generator.py
+>> link_generator.py [Update 11/08/24 - Fixed free casesbeing added to the link list]
 > Generates 'links.txt' file by looking at the Sitemap.xml on skin.club
 > Filters out all un-necessary links and only lists sites with paid-cases
 
@@ -17,7 +17,7 @@ Data Explanation
 > Generates 'skinclub_database.csv' by opening each link on 'links.txt' and runs each site on a webdriver via Selenium
 > The wedriver than pulls data out from the HTML of the file and creates text, boolean, numeric data and loads it onto the .csv
 
->> data_munger.py [Should be good]
+>> data_munger.py [Update 11/08/24 - Fixed index values being added to CSV to maintian form]
 > Output 'skinclub_case_stats.csv' and 'skinclub_database_updated.csv'
 
 >> simulator.py [TO-DO]
