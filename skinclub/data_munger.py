@@ -16,9 +16,9 @@ df['cost'] = df['cost'].str.replace('$', '').astype(float)
 df['odds'] = df['odds'].str.replace('%', '').astype(float)
 
 df['return'] = df['price'] - df['cost']
-df['return_p'] = (df['price'] / df['cost'])*100
+df['return_p'] = ((df['price'] / df['cost'])*100)-100
 
-df.to_csv("skinclub_database_processed.csv")
+df.to_csv("skinclub_database_processed.csv",index=False)
 
 ## Case by Case Statistics
 cases = pd.unique(df['case'])

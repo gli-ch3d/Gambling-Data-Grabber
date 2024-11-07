@@ -13,7 +13,7 @@ for loc in loc_tags:
 ## Remove free cases and only link available cases
 filtered_xml = []
 for link in urls_from_xml:
-    if '/en/cases/open' in link and 'lvl' not in link:
+    if '/en/cases/open' in link and 'lvl' not in link and 'free-case' not in link and 'premium-case' not in link and 'email-giveaway-case' not in link:
         filtered_xml.append(link)
 
 ## Write to file for shared info
