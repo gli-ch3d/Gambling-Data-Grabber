@@ -1,0 +1,18 @@
+To-Do List
+
+>> Goal
+> How does AI Gamble if given the opportunity
+
+Simulator
+
+def open_case(case_name, ## of cases)
+
+    case_name => Run Closest Match
+
+    1 - 100000 rng
+
+
+    return 
+    List of Wins / Total Profit
+
+Simulator UI -- Long term project
