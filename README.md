@@ -1,4 +1,4 @@
 # Gambling-Data-Grabber
 
-Made for skinclub
+Made for skinclub.  
 Adaptation to CSGORoll is -WIP-
